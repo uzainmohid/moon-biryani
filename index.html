@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Biryani - Taste the Flavor of the Moon!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Moon Biryani</h1>
+                <p>"Embark on a Flavorful Journey to the Moon with Our Biryani!"</p>
+            </div>
+            <nav>
+                <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+                <ul class="nav-list">
+                    <li><a href="#starters">Starters</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#offers">Special Offers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="starters" class="section">
+        <h2>Starters</h2>
+        <div class="items">
+            <div class="item" onclick="showAlert('Samosa - Crispy, savory goodness filled with spiced potatoes and peas! order confirmed!')">
+                <img src="https://t3.ftcdn.net/jpg/09/66/55/06/240_F_966550606_KqEOFJFzJMedOEr3GLUgH2DH8AIps3EP.jpg" alt="Samosa">
+                <p class="item-title">Samosa</p>
+                <p class="item-desc">A delicious, crispy pastry filled with spiced potatoes and peas!</p>
+                <button class="order-btn" onclick="orderItem('Samosa', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Pakora - Crunchy, golden fritters made with chickpea flour and spices! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/11/50/21/29/240_F_1150212914_s7UP0h8SNdNjllHYTzTqnMoHStjm65So.jpg" alt="Pakora">
+                <p class="item-title">Pakora</p>
+                <p class="item-desc">A crunchy, golden fritter, perfect for dipping in chutney!</p>
+                <button class="order-btn" onclick="orderItem('Pakora', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Spring Rolls - Freshly fried rolls stuffed with vegetables and spices! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/09/94/30/61/240_F_994306158_2d4Zv4dq6EbaJr2RXFrhuUfCnR6Zr2sP.jpg" alt="Spring Rolls">
+                <p class="item-title">Spring Rolls</p>
+                <p class="item-desc">Crispy and delicious rolls stuffed with veggies and perfect for starters!</p>
+                <button class="order-btn" onclick="orderItem('Spring Rolls', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Paneer Tikka - Grilled chunks of paneer marinated in spices and yogurt! order confirmed!')">
+                <img src="https://t3.ftcdn.net/jpg/08/01/26/58/240_F_801265894_Rki0CGiwjQiv2kRtRCAnXjKeFQ12jjYr.jpg" alt="Paneer Tikka">
+                <p class="item-title">Paneer Tikka</p>
+                <p class="item-desc">Grilled, smokey chunks of paneer marinated in a delicious blend of spices!</p>
+                <button class="order-btn" onclick="orderItem('Paneer Tikka', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Aloo Tikki - Flavorful spiced potato patties, served with tangy chutney! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/07/21/83/39/240_F_721833955_dg8pgHfFu1IKv3glv7S39M4kUm3Z2aiQ.jpg" alt="Aloo Tikki">
+                <p class="item-title">Aloo Tikki</p>
+                <p class="item-desc">Golden crispy patties made with spiced mashed potatoes. A perfect treat!</p>
+                <button class="order-btn" onclick="orderItem('Aloo Tikki', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Chana Chaat - Tangy chickpeas mixed with chutneys, onions, and spices! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/11/83/24/43/240_F_1183244399_6kdIeealIr4AwFN0QReYnIHLWSLCgS1x.jpg" alt="Chana Chaat">
+                <p class="item-title">Chana Chaat</p>
+                <p class="item-desc">A spicy, tangy chickpea salad with a perfect balance of chutneys and spices!</p>
+                <button class="order-btn" onclick="orderItem('Chana Chaat', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Dhokla - Soft, spongy steamed snack made from rice and chickpea flour! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/11/54/47/45/240_F_1154474546_h3z8kcpxogTc2AuKeaddgY6MbUeIBrs9.jpg" alt="Dhokla">
+                <p class="item-title">Dhokla</p>
+                <p class="item-desc">A savory steamed cake made from rice and chickpea flour. Light and fluffy!</p>
+                <button class="order-btn" onclick="orderItem('Dhokla', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Onion Bhaji - Deep-fried crispy onion fritters that are a crowd favorite! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/09/66/48/01/240_F_966480114_7VPlLmpgRMmGvd6UctbHkPmA1GIvV7yd.jpg" alt="Onion Bhaji">
+                <p class="item-title">Onion Bhaji</p>
+                <p class="item-desc">Crispy and spiced onion fritters, perfect for snacking!</p>
+                <button class="order-btn" onclick="orderItem('Onion Bhaji', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Hara Bhara Kebab - Spinach and peas blended into a flavorful patty! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/09/14/46/81/240_F_914468106_urLotmg3HSFbQA62brU0mw7eObZQadu7.jpg" alt="Hara Bhara Kebab">
+                <p class="item-title">Hara Bhara Kebab</p>
+                <p class="item-desc">A vegetarian kebab made from spinach and peas, full of flavors and crunch!</p>
+                <button class="order-btn" onclick="orderItem('Hara Bhara Kebab', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Mushroom Biryani Balls - Flavorful rice balls stuffed with aromatic mushrooms! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/08/79/85/43/240_F_879854382_hFq33IZfu7kRcQQa7AFmWdOAa95iReaO.jpg" alt="Mushroom Biryani Balls">
+                <p class="item-title">Mushroom Biryani Balls</p>
+                <p class="item-desc">Delicious bite-sized biryani balls stuffed with mushrooms, perfect for snacking!</p>
+                <button class="order-btn" onclick="orderItem('Mushroom Biryani Balls', '$4.99')">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Menu</h2>
+        <div class="items">
+            <div class="item" onclick="showAlert('Chicken Biryani - Tender chicken, infused with rich spices and aromatic rice! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/09/89/59/05/240_F_989590525_mn4MKqsUN76COCWcIWOiGqkBf7s6vqde.jpg" alt="Chicken Biryani">
+                <p class="item-title">Chicken Biryani</p>
+                <p class="item-desc">A perfect blend of tender chicken, basmati rice, and spices!</p>
+                <button class="order-btn" onclick="orderItem('Chicken Biryani', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Mutton Biryani - Flavor-packed mutton with fragrant basmati rice and spices! order confirmed!')">
+                <img src="https://t3.ftcdn.net/jpg/05/98/53/74/240_F_598537483_Jp3yJTFFtk8zo1Nh67N1GkK33VFLep20.jpg" alt="Mutton Biryani">
+                <p class="item-title">Mutton Biryani</p>
+                <p class="item-desc">A rich, flavorful biryani made with tender mutton and aromatic spices.</p>
+                <button class="order-btn" onclick="orderItem('Mutton Biryani', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Veg Biryani - Fragrant rice mixed with fresh vegetables and mild spices! order confirmed!')">
+                <img src="https://t3.ftcdn.net/jpg/09/61/30/24/240_F_961302423_0edVnPpggPwaOW176cFtEubFtQIoXGuz.jpg" alt="Veg Biryani">
+                <p class="item-title">Veg Biryani</p>
+                <p class="item-desc">A delicious vegetarian biryani loaded with vegetables and spices!</p>
+                <button class="order-btn" onclick="orderItem('Veg Biryani', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Fish Biryani - Flaky, tender fish served with aromatic rice! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/09/47/11/19/240_F_947111915_6YI4TMelgtDjj5RcBLnBsbHTpgd9qoPu.jpg" alt="Fish Biryani">
+                <p class="item-title">Fish Biryani</p>
+                <p class="item-desc">Delicate fish cooked with fragrant spices and served over aromatic rice.</p>
+                <button class="order-btn" onclick="orderItem('Fish Biryani', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Chicken Korma - Creamy and mild chicken curry, with a rich blend of spices! order confirmed!')">
+                <img src="https://t3.ftcdn.net/jpg/08/81/62/34/240_F_881623423_7eRsZZNyoOj5Q6EyqWF4lZ6s97DMLD6c.jpg" alt="Chicken Korma">
+                <p class="item-title">Chicken Korma</p>
+                <p class="item-desc">A creamy, mild curry made with tender chicken and spices, served with naan!</p>
+                <button class="order-btn" onclick="orderItem('Chicken Korma', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Mutton Rogan Josh - A classic mutton curry with rich, aromatic spices! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/06/92/56/23/240_F_692562385_RDtFSDE4mP2DbYNU96XoVj7h9pgMGTpc.jpg" alt="Mutton Rogan Josh">
+                <p class="item-title">Mutton Rogan Josh</p>
+                <p class="item-desc">A rich, flavorful mutton curry, cooked with traditional spices and herbs!</p>
+                <button class="order-btn" onclick="orderItem('Mutton Rogan Josh', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Paneer Butter Masala - Creamy and flavorful paneer curry served with naan or rice! order confirmed!')">
+                <img src="https://t3.ftcdn.net/jpg/07/94/07/60/240_F_794076057_bZx3XkS3q86RfBHFKFcvg8ZejrImqdmv.jpg" alt="Paneer Butter Masala">
+                <p class="item-title">Paneer Butter Masala</p>
+                <p class="item-desc">A rich and creamy curry made with soft paneer in a tangy tomato gravy!</p>
+                <button class="order-btn" onclick="orderItem('Paneer Butter Masala', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Tandoori Chicken - Smoky, grilled chicken with spices from the tandoor! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/06/12/03/85/240_F_612038524_JSdZDp3QCWCntBgWTFuli5XtV0JIxZza.jpg" alt="Tandoori Chicken">
+                <p class="item-title">Tandoori Chicken</p>
+                <p class="item-desc">Smoky, grilled chicken marinated in yogurt and spices, straight from the tandoor!</p>
+                <button class="order-btn" onclick="orderItem('Tandoori Chicken', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Shahi Tukda - A royal dessert made with bread, milk, and nuts! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/07/03/44/99/240_F_703449934_oRyZah5oemyjqbs5ag6gLHfYl4mUrByv.jpg" alt="Shahi Tukda">
+                <p class="item-title">Shahi Tukda</p>
+                <p class="item-desc">A delicious royal dessert made with fried bread, milk, and cardamom!</p>
+                <button class="order-btn" onclick="orderItem('Shahi Tukda', '$4.99')">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Gulab Jamun - Soft, round dumplings soaked in fragrant sugar syrup! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/08/59/47/79/240_F_859477948_8xeL8mudUnUEhLfyAX81DmY5LoRrD6iy.jpg" alt="Gulab Jamun">
+                <p class="item-title">Gulab Jamun</p>
+                <p class="item-desc">Soft, sweet dumplings soaked in a fragrant sugar syrup, the perfect end to your meal!</p>\
+                <button class="order-btn" onclick="orderItem('Gulab Jamun', '$4.99')">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="offers" class="section">
+        <h2>Special Offers</h2>
+        <div class="items">
+            <div class="item" onclick="showAlert('Buy 1 Get 1 Free on Mutton Biryani! order confirmed!')">
+                <img src="https://t4.ftcdn.net/jpg/08/95/17/55/240_F_895175590_F3NX32mI97eYGyJ6WStgrjhC5eFozft2.jpg" alt="Offer 1">
+                <p class="item-title">Mutton Biryani Deal</p>
+                <p class="item-desc">Buy 1 Mutton Biryani, get 1 free! The more, the merrier!</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('20% Off on all Biryanis! Offer Claimed!')">
+                <img src="https://t4.ftcdn.net/jpg/11/32/66/41/240_F_1132664162_lKGoWTjk9C8ehcZ0tr6YZPvGyKksveDu.jpg" alt="Offer 2">
+                <p class="item-title">20% Off on Biryanis</p>
+                <p class="item-desc">Enjoy 20% off on all biryanis when you order online!</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Free Drink with Chicken Biryani! Offer Claimed!')">
+                <img src="https://t3.ftcdn.net/jpg/07/62/06/46/240_F_762064613_wE5a7UEDoH4j6Mn6p72lFOy1P0jZORk3.jpg" alt="Offer 3">
+                <p class="item-title">Free Drink</p>
+                <p class="item-desc">Get a free drink with every Chicken Biryani order!</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Get a Free Dessert with 2 Biryanis! Offer Claimed!')">
+                <img src="https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg" alt="Offer 4">
+                <p class="item-title">Free Dessert</p>
+                <p class="item-desc">Order 2 biryanis and get a free dessert on us!</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Combo Deal – Biryani + Starter at 30% Off! Offer Claimed!')">
+                <img src="https://t4.ftcdn.net/jpg/03/52/50/55/240_F_352505589_zgIxAZf6J8Q6hlwwWyNbV2xrOfnZO55D.jpg" alt="Offer 5">
+                <p class="item-title">Combo Deal</p>
+                <p class="item-desc">Get a biryani + starter combo at 30% off. A perfect meal!</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Family Pack Offer – 5 Biryanis for the Price of 4! Offer Claimed!')">
+                <img src="https://t4.ftcdn.net/jpg/09/22/35/39/240_F_922353919_qQWB6u42oBuMv9r1iC0YCxSyASifvxii.jpg" alt="Offer 6">
+                <p class="item-title">Family Pack</p>
+                <p class="item-desc">Buy 4, get 5 biryanis! Perfect for family gatherings.</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Free Delivery on Orders Above $50! Offer Claimed!')">
+                <img src="https://t4.ftcdn.net/jpg/02/25/77/77/240_F_225777728_jyCvOxvUpYUpfcW02w3S2OXLJy0yvjiV.jpg" alt="Offer 7">
+                <p class="item-title">Free Delivery</p>
+                <p class="item-desc">Enjoy free delivery on orders above $50. Your meal, delivered to you!</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Happy Hour – 50% Off on Drinks! Offer Claimed!')">
+                <img src="https://t4.ftcdn.net/jpg/02/73/53/93/240_F_273539317_pQhUFWtvwlJ1L0sBgFkaYxTs35LeL2p1.jpg" alt="Offer 8">
+                <p class="item-title">Happy Hour</p>
+                <p class="item-desc">Get 50% off on drinks during happy hour! Cheers!</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('10% Off for Students! Offer Claimed!')">
+                <img src="https://t3.ftcdn.net/jpg/02/95/95/40/240_F_295954097_M5rS7QVO801luSnfLpKE4uIxI4jLvVF8.jpg" alt="Offer 9">
+                <p class="item-title">Student Discount</p>
+                <p class="item-desc">Students get 10% off! Just show your student ID.</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item" onclick="showAlert('Free Extra Biryani with Every Family Meal! Offer Claimed!')">
+                <img src="https://t4.ftcdn.net/jpg/11/28/83/53/240_F_1128835337_cZSZBGsnE58hchZQ2WyVifqKBaPPzcOy.jpg" alt="Offer 10">
+                <p class="item-title">Extra Biryani</p>
+                <p class="item-desc">Get a free extra biryani with every family meal order. Feed the family!</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form onsubmit="return contactForm();">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Moon Biryani | All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
